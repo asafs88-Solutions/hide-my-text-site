@@ -33,7 +33,7 @@
       <h2>Basic Help</h2>
       <h3>Create a Vault</h3>
       <p>Create a local vault and write down your 12-word recovery phrase. Hide My Text cannot recover this phrase for you.</p>
-      <figure class="tutorial-video">
+      <figure class="tutorial-video" id="create-vault-video">
         <video controls playsinline preload="metadata" aria-label="Create a vault tutorial video">
           <source src="media/create-vault-tutorial.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -59,5 +59,15 @@
     <span>© 2026 Hide My Text</span>
     <a href="privacy.html">Privacy Policy</a>
   </footer>
+
+  <script>
+    const tutorial = document.querySelector('#create-vault-video');
+    const video = tutorial?.querySelector('video');
+    video?.addEventListener('play', () => tutorial.classList.add('is-expanded'));
+    video?.addEventListener('pause', () => {
+      if (video.currentTime === 0 || video.ended) tutorial.classList.remove('is-expanded');
+    });
+    video?.addEventListener('ended', () => tutorial.classList.remove('is-expanded'));
+  </script>
 </body>
 </html>
