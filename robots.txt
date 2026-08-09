@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asafs88-solutions.github.io/hide-my-text-site/sitemap.xml

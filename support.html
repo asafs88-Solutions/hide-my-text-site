@@ -3,71 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support - Hide My Text</title>
-  <meta name="description" content="Support information for Hide My Text.">
+  <title>Hide My Text Support: Setup, Pairing and Recovery Help</title>
+  <meta name="description" content="Get help with Hide My Text vault setup, contact pairing, protected text and files, groups, broadcast lists, backup, and recovery on iPhone.">
+  <link rel="canonical" href="https://asafs88-solutions.github.io/hide-my-text-site/support.html">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hide My Text">
+  <meta property="og:title" content="Hide My Text Support">
+  <meta property="og:description" content="Setup, pairing, protected sharing, backup, and recovery help for Hide My Text.">
+  <meta property="og:url" content="https://asafs88-solutions.github.io/hide-my-text-site/support.html">
+  <meta property="og:image" content="https://asafs88-solutions.github.io/hide-my-text-site/assets/app-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Hide My Text home">
-      <span class="brand-mark">HT</span>
+      <img src="assets/app-icon.png" width="1024" height="1024" alt="">
       <span>Hide My Text</span>
     </a>
-    <nav>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
+    <nav aria-label="Main navigation">
+      <a href="how-it-works.html">How It Works</a>
+      <a href="security.html">Security</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html" aria-current="page">Support</a>
     </nav>
   </header>
 
-  <main class="page">
-    <h1>Support</h1>
-    <p class="lead">For questions, bugs, feedback, offers, or any other topic, contact us by email.</p>
+  <main class="page" id="main">
+    <header>
+      <p class="eyebrow">Product support</p>
+      <h1>Help with setup, pairing, sharing, and recovery.</h1>
+      <p class="lead">Start with a guide below or contact us about a question, bug, feedback, partnership, or another topic.</p>
+    </header>
 
-    <section class="contact-panel">
-      <h2>Contact Us</h2>
+    <div class="contact-panel">
+      <h2>Contact Hide My Text</h2>
       <p><a href="mailto:wearehidemytext@gmail.com">wearehidemytext@gmail.com</a></p>
-    </section>
+      <p class="muted-copy">For privacy, share only redacted, non-secret diagnostic details with support.</p>
+    </div>
 
-    <section class="content-list">
-      <h2>Basic Help</h2>
-      <h3>Create a Vault</h3>
-      <p>Create a local vault and write down your 12-word recovery phrase. Hide My Text cannot recover this phrase for you.</p>
-      <figure class="tutorial-video" id="create-vault-video">
-        <video controls playsinline preload="metadata" aria-label="Create a vault tutorial video">
-          <source src="media/create-vault-tutorial.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Create a vault in Hide My Text.</figcaption>
-      </figure>
+    <div class="link-grid" aria-label="Support guides">
+      <a href="how-it-works.html">Set up and use Hide My Text</a>
+      <a href="encrypt-text.html">Protect and reveal text</a>
+      <a href="encrypt-files.html">Protect and reveal files</a>
+      <a href="groups-broadcast-lists.html">Use groups and broadcast lists</a>
+      <a href="recovery-backup.html">Recovery phrase and backup</a>
+      <a href="security.html">Security architecture</a>
+    </div>
 
-      <h3>Add a Contact</h3>
-      <p>Create an invite, share it with the person you want to trust, and compare the safety phrase outside the chat transport before trusting the contact.</p>
-
-      <h3>Hide Text</h3>
-      <p>Choose a trusted contact, write your message, and create hidden encrypted text. Send the hidden text using any messaging app.</p>
-
-      <h3>Reveal Text</h3>
-      <p>Paste received hidden text into Hide My Text. Only the designated trusted contact should be able to reveal it.</p>
-
-      <h3>Restore</h3>
-      <p>Use your 12-word recovery phrase to restore your identity. Use an encrypted backup to restore contacts and local app data. Restored contacts may require re-verification.</p>
-    </section>
+    <div class="content">
+      <section>
+        <h2>Pairing checklist</h2>
+        <ul>
+          <li>Use the invite within its 15-minute validity period.</li>
+          <li>Complete both sides of the invite and response flow.</li>
+          <li>Compare the safety phrase through a separate trusted method.</li>
+          <li>Check that the contact is marked Trusted before protecting content for them.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Before deleting the app or changing iPhone</h2>
+        <p>Keep the 12-word recovery phrase offline and create a current encrypted backup. They serve different purposes and may both be needed to restore the intended local state. Write the phrase down instead of using the standard iOS Copy action.</p>
+        <p><a href="recovery-backup.html">Read the recovery and backup guide</a></p>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <span>© 2026 Hide My Text</span>
-    <a href="privacy.html">Privacy Policy</a>
+    <span>&copy; 2026 Hide My Text</span>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:wearehidemytext@gmail.com">Contact</a>
+    </div>
   </footer>
-
-  <script>
-    const tutorial = document.querySelector('#create-vault-video');
-    const video = tutorial?.querySelector('video');
-    video?.addEventListener('play', () => tutorial.classList.add('is-expanded'));
-    video?.addEventListener('pause', () => {
-      if (video.currentTime === 0 || video.ended) tutorial.classList.remove('is-expanded');
-    });
-    video?.addEventListener('ended', () => tutorial.classList.remove('is-expanded'));
-  </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hide My Text FAQ: Accounts, Files, Pairing and Recovery</title>
+  <meta name="description" content="Answers about Hide My Text accounts, servers, recipients, contact pairing, supported files, groups, broadcast lists, recovery, backups, and app security.">
+  <link rel="canonical" href="https://asafs88-solutions.github.io/hide-my-text-site/faq.html">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Hide My Text">
+  <meta property="og:title" content="Hide My Text Frequently Asked Questions"><meta property="og:description" content="Direct answers about setup, pairing, protected sharing, groups, recovery, and app security.">
+  <meta property="og:url" content="https://asafs88-solutions.github.io/hide-my-text-site/faq.html"><meta property="og:image" content="https://asafs88-solutions.github.io/hide-my-text-site/assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Hide My Text home"><img src="assets/app-icon.png" width="1024" height="1024" alt=""><span>Hide My Text</span></a>
+    <nav aria-label="Main navigation"><a href="how-it-works.html">How It Works</a><a href="security.html">Security</a><a href="faq.html" aria-current="page">FAQ</a><a href="support.html">Support</a></nav>
+  </header>
+
+  <main class="page" id="main">
+    <header>
+      <p class="eyebrow">Frequently asked questions</p>
+      <h1>Direct answers about Hide My Text.</h1>
+      <p class="lead">Learn about setup, pairing, supported content, recovery, groups, and app security.</p>
+      <div class="actions"><a class="button" href="https://apps.apple.com/app/id6783043802">View on the App Store</a><a class="button secondary" href="how-it-works.html">See How It Works</a></div>
+    </header>
+    <div class="content">
+      <details open><summary>How does Hide My Text work with messaging apps?</summary><p>It protects supported content locally, then lets the user send the protected output through the separate platform of their choice.</p></details>
+      <details><summary>Does Hide My Text require an account, email, or phone number?</summary><p>No Hide My Text account, email address, or phone number is required to create and use the local vault.</p></details>
+      <details><summary>Does Hide My Text run a messaging server?</summary><p>No Hide My Text messaging server transports users' protected messages or files. The user selects the external platform for delivery.</p></details>
+      <details><summary>Does the recipient need Hide My Text?</summary><p>Yes. The recipient needs the app and the correct trusted contact or approved destination state to reveal protected content intended for them.</p></details>
+      <details><summary>How are contacts verified?</summary><p>Contacts complete an invite and response flow, then compare a safety phrase through a separate trusted method before confirming trust.</p></details>
+      <details><summary>How long does an invite last?</summary><p>Contact and destination invites in build 71 expire after 15 minutes.</p></details>
+      <details><summary>Which files are supported?</summary><p>Documents: TXT, PDF, DOCX. Photos: JPG, JPEG, PNG, HEIC, HEIF. Videos: MP4, MOV, AVI. One file can be protected at a time, up to 25 MiB.</p></details>
+      <details><summary>What is the difference between a group and broadcast list?</summary><p>A private group is a multi-participant protected destination. A broadcast list is controlled by its admin for one-way protected updates to approved members.</p></details>
+      <details><summary>How does membership management work?</summary><p>Administrators can add approved members, remove members, and manage each local group or broadcast-list destination.</p></details>
+      <details><summary>How do the recovery phrase and backup work together?</summary><p>The recovery phrase recreates the local identity and keys. The encrypted backup restores supported contact, group, and broadcast-list records.</p></details>
+      <details><summary>What returns after restoring a backup?</summary><p>Supported contact, group, and broadcast-list records return with contacts and destination members marked Pending, ready for trust verification.</p></details>
+      <details><summary>How is recovery controlled?</summary><p>The user-controlled 12-word recovery phrase is the source for recreating the local identity. Write it down in order and store it securely offline.</p></details>
+      <details><summary>How should I store the recovery phrase?</summary><p>Write it down offline and keep it in a secure location. In build 71, the standard iOS Copy action on the displayed phrase can place it on the system clipboard.</p></details>
+      <details><summary>How long does revealed text stay on screen?</summary><p>Build 71 clears revealed text from its screen after 90 seconds.</p></details>
+      <details><summary>Is an iPhone passcode required?</summary><p>Yes. Hide My Text requires an iPhone device passcode to create and open its encrypted local vault. Face ID or Touch ID is optional. Keep the iPhone passcode enabled to preserve access to the device-only vault key; the recovery phrase and latest encrypted backup provide the recovery path when rebuilding the local vault.</p></details>
+      <details><summary>When does the optional App Lock prompt return?</summary><p>When the additional App Lock prompt is enabled, build 71 allows a 90-second background grace period before locking again. The required iPhone device passcode remains the fallback.</p></details>
+      <section><h2>Still need help?</h2><p>Visit <a href="support.html">Hide My Text Support</a> or email <a href="mailto:wearehidemytext@gmail.com">wearehidemytext@gmail.com</a> with redacted, non-secret diagnostic details.</p></section>
+    </div>
+  </main>
+  <footer><span>&copy; 2026 Hide My Text</span><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:wearehidemytext@gmail.com">Contact</a></div></footer>
+</body>
+</html>
